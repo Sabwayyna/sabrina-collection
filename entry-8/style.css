@@ -1,0 +1,332 @@
+body {
+  cursor: url('images/cursor.png'), auto;
+}
+
+.End-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.052rem;
+  font-feature-settings: "liga" 1;
+  font-variant-ligatures: common-ligatures;
+  color: rgba(0, 0, 0, 0.47);
+
+}
+.main-content {
+min-height: 1000px;
+}
+
+.hero {
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+height: 100vh;
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+@media screen and (min-width: 640px) {
+.hero {
+background-position: 50% 0;
+}
+}
+.hero:after {
+background-color: rgba(0, 0, 0, 0.5);
+bottom: 0;
+content: "";
+left: -2000%;
+position: absolute;
+right: -2000%;
+top: 0;
+z-index: 1;
+}
+
+.hero-container {
+box-sizing: border-box;
+height: auto;
+padding: 30px 50px;
+position: relative;
+z-index: 2;
+transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+transition-duration: 1.2s;
+}
+@media screen and (min-width: 640px) {
+.hero-container {
+height: 100%;
+}
+}
+.hero-container p {
+color: white;
+font-family: 'Inter', sans-serif;
+font-size: 13px;
+font-weight: 900;
+letter-spacing: 6px;
+opacity: 0.8;
+text-transform: uppercase;
+text-align: left;
+}
+
+.hero-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.hero-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #232323; 
+  text-shadow: 0 0 15px rgba(255, 215, 215, 0.8)
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.hero-title {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 17vw;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 5px 0;
+  text-align: left;
+  width: 85%;
+  transition: text-shadow 0.5s, font-size 0.5s;
+}
+
+.hero-title:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 640px) {
+  .hero-title {
+      font-size: 10vw;
+  }
+}
+
+.main-content {
+height: auto;
+padding: 30px 50px;
+position: relative;
+width: 60%;
+}
+
+.main-content p {
+color: #25373D;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+line-height: 1.5;
+}
+
+
+.top-right-button {
+font-family: 'Inter', sans-serif;
+position: fixed;
+top: 20px;
+right: 20px;
+color: #ffffff;
+font-size: 18px;
+padding: 10px 20px;
+border: 1px solid #ffffff;
+border-radius: 5px;
+text-decoration: none;
+overflow: hidden;
+transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.top-right-button:hover {
+display: block;
+color: #000000;
+background-color: #ffffff;
+}
+
+
+@-webkit-keyframes fadeInLeft {
+from {
+opacity: 0;
+transform: translate3d(-12px, 0, 0);
+}
+to {
+opacity: 1;
+transform: none;
+}
+}
+
+@keyframes fadeInLeft {
+from {
+opacity: 0;
+transform: translate3d(-12px, 0, 0);
+}
+to {
+opacity: 1;
+transform: none;
+}
+}
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+}
+
+.animate {
+-webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+-webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+-webkit-animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+      animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+
+.delay {
+-webkit-animation-delay: 1s;
+      animation-delay: 1s;
+}
+
+.delay-400 {
+-webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+}
+
+.delay-500 {
+-webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+}
+
+.delay-600 {
+-webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+}
+
+.delay-700 {
+-webkit-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+}
+
+.delay-800 {
+-webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+}
+
+
+.Small-Title {
+  font-family: 'Inter', sans-serif;
+  font-size: large;
+  font-weight: 700;
+}
+.grid {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.feature-letter {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1;
+  font-size: calc(100px + (550 - 100) * ((100vw - 320px) / (1000 - 320)));
+  margin: 0;
+  background-image: url('images/Title-Image.jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  float: left;
+  shape-margin: 0.5rem;
+  shape-outside: polygon(6.13% 18.73%, 5.97% 84.82%, 39.05% 84.64%, 43.15% 60.82%, 66.73% 83.73%, 101.49% 83.64%, 79.49% 59.81%, 89.11% 54.91%, 94.27% 48.09%, 96.59% 36.55%, 91.11% 25%, 74.52% 19.27%);
+  transition: font-size 0.3s ease; 
+  cursor: pointer;
+}
+
+.feature-letter:hover {
+  font-size: calc(150px + (550 - 120) * ((100vw - 320px) / (1000 - 320))); 
+}
+
+
+
+.feature-intro {
+   font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.052rem;
+  font-feature-settings: "liga" 1;
+  font-variant-ligatures: common-ligatures;
+}
+.feature-intro.start {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.feature-intro.start::first-letter {
+  font-size: 28px;
+  padding: 0 0 0 5px;
+}
+
+.nestedGrid {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.052rem;
+  margin: 1rem;
+  grid-gap: 1.25rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "text1" "text2" "text3";
+}
+@media screen and (min-width: 400px) {
+  .nestedGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text1 text2" "text1 text2" "text3 text3";
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nestedGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "text1 text2 text3" "text1 text2 ." ". . .";
+  }
+}
+.nestedGrid img {
+  width: 100%;
+}
+
+.image1 {
+  grid-area: image1;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.text1 {
+  grid-area: text1;
+  align-items: start;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-style: italic;
+  transform: translateX(-0.5rem);
+}
+
+p + img,
+img + h2 {
+  margin-top: 0.5rem;
+}

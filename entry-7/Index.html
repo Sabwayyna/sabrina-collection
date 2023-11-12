@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="icon" href="favicon/Favicon.jpg" type="image/x-icon">
+
+  <title>Our Virtue</title>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!--STYLE For Clipping Mask Video Title-->
+<style>
+  svg {
+    font-family: 'Inter', sans-serif;
+    opacity: 0.5; 
+  }
+
+  video {
+    -webkit-clip-path: url(#clip);
+    clip-path: url(#clip);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+  }
+</style>
+
+<!--Clipping Mask Video Title-->
+<svg style="position: fixed; z-index: -999;" viewBox="0 0 1 1">
+  <defs>
+    <clipPath id="clip" clipPathUnits="objectBoundingBox">
+      <text x="0.5" y="0.15" font-size="0.12" text-anchor="middle" alignment-baseline="middle" font-family="Inter, sans-serif">Our Virtue</text>
+    </clipPath>
+  </defs>
+</svg>
+
+<video autoplay playsinline muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
+  <source src="videos/bc6df8d4-5d20-40ca-b433-223bd7748b7c.webm" />
+  <source src="videos/TitleVideo.mp4" />
+</video>
+
+
+
+<!--Hamburger Menu!-->
+<div id="menuArea">
+  <input type="checkbox" id="menuToggle"></input>
+
+<label for="menuToggle" class="menuOpen">
+  <div class="open"></div>
+</label>
+
+<div class="menu menuEffects">
+  <label for="menuToggle"></label>
+  <div class="menuContent">
+    <ul>
+      <li><a href="https://sabwayyna.github.io/SabrinaWu.github.io/">Homepage</a></li>
+      <li><a href="https://sabwayyna.github.io/SabrinaWu.github.io/about.html">About My Theme</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<main id="page">
+  <div class="division row" id="icon-page-top">
+    <p class="icon-page">Entry 7</p>
+  </div>
+  
+  <!--Hover when shown - Text isolation and unity-->
+  <div class="division allcaps-sm-div row">
+    <div class="half-left col">
+      <h4 class="bg-rects" id="text-no">isolation</h4>
+    </div>
+    <div class="half-right"></div>
+  </div>
+  
+  <style>
+    .bg-rects {
+      background: #c5917b;
+      color: #c5917b;
+      text-decoration: none;
+    }
+  
+    .bg-rects:hover {
+      color: #180f0f;
+    }
+  </style>
+  
+  <div class="division allcaps-lg row">
+    <a href="https://www.youtube.com/watch?v=w5HvxsOo00E" class="massive-text" id="com">
+      OUR
+    </a>  
+  </div>
+
+  <!--Text within TITLE-->
+
+  
+  <div class="division intro-sentence"><h4>
+    In recognition of anyone who is struggling during the pandemic,in this painting, I express one’s feeling of despair and
+    isolation, yet their hope and optimism during the pandemic through rhythmic grasping hands, embodying our unity.
+  </h4></div>
+
+
+  <div class="division allcaps-lg row">
+    <a href="https://www.youtube.com/watch?v=FMc280EtXxs" class="massive-text" id="put">
+      VIRTUE
+    </a>
+  </div>
+  
+  <style>.diagonal-bg {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+  <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      $(".diagonal-bg svg line").attr("stroke-width",  ((30 + scroll/10)  + "%"));
+    });
+  </script>
+
+<style>
+  .massive-text {
+    text-decoration: none;
+    color: #000;
+  }
+    .massive-text {
+  opacity: 1; 
+  transition: opacity 0.3s; 
+}
+.massive-text:hover {
+    opacity: 0.7; 
+}
+</style>  
+
+  <div class="division row">
+    <div class="bottom-parts col half-left" id="btm-left">
+      <div class="allcaps-sm-div">
+        <h4 class="bg-rects" id="text-no">unity</h4>
+      </div>
+    </div>
+    
+    <div class="bottom-parts col half-right" id="btm-right">
+      <div id="byline">
+        <h4 id="author">Artwork by <span>Sabrina Wu</span></h4>
+        <h5 id="illustrator">Made in Feburary 2020</h5>
+      </div>
+      <div id="article-text">
+        <p>
+            This digital painting portrays the emotional complexities many people are facing amid the ongoing pandemic. 
+            It depicts a mix of feelings—despair and isolation, but also hints of hope and optimism.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The artwork centers around interlocked hands, representing both the struggles and the unity experienced collectively during these challenging times. 
+            It aims to resonate with those going through similar experiences, showcasing the intertwined feelings of despair and hope that coexist in our current reality.
+            The intertwining hands symbolize the shared human experiences and the solidarity felt universally. 
+            By juxtaposing despair with hope, the artwork captures the nuanced emotions people are navigating in the midst of change caused by the pandemic.
+         </p>
+      </div>
+    </div>  
+  </div>
+</main>
+
+<body>
+<article class="sans-serif dark-gray ph3 ph0-ns mv5 center grid layout measure-wide-m mw8-l">
+
+  <div class="layout--meta mt5 mt0-ns h-100-ns flex flex-column justify-between">
+    <div class="mb3 mb0-ns">
+      <p class="f6 mt2">11” x 19”</p>
+      <time class="f6 ttu tracked silver"> // Digital Painting</time>
+    </div>
+  </div>
+
+  <header class="layout--title avenir">
+    <h1 class="lh-solid f1 f-subheadline-m f-headline-l b mv0">
+      <img class="enlarge" src="images/Artwork.JPG" alt="Artwork!">
+    </h1>
+ 
+  
+<style>
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: 15% auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+}
+
+    .enlarge {
+  transition: transform 0.3s ease;
+            }
+
+.enlarge:hover {
+  transform: scale(1.06);
+            }
+
+</style>     
+
+<script>
+   
+var image = document.querySelector('.enlarge');
+var modal = document.createElement('div');
+modal.classList.add('modal');
+
+var modalContent = document.createElement('div');
+modalContent.classList.add('modal-content');
+modal.appendChild(modalContent);
+
+var enlargedImage = new Image();
+enlargedImage.src = image.src;
+enlargedImage.alt = image.alt;
+modalContent.appendChild(enlargedImage);
+
+document.body.appendChild(modal);
+
+image.addEventListener('click', function() {
+  modal.style.display = 'block'; 
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+</script>
+
+<!--TEXT Image -->
+      
+    <h2 class="f4 f3-l mb0 light-red lh-title">
+       "Using a symbolic narrative with hands, I depict the COVID-19 peak: hands trying to hold but unable, expressing uncertainty, longing for physical contact, and honoring those lost to the pandemic."
+    </h2>
+  </header>
+
+  <section class="layout--copy1 cols-no-break cols--1 cols--2-l mt5 lh-copy">
+  
+    
+    <blockquote class="mv5 mh0 measure-narrow center avenir f4 fw6 tc ph3">
+      <a href="ProcessVideo.html" class="clickable-text">→ PROCESS OF PAINTING</a>
+  </blockquote>
+
+  <style>
+    .clickable-text {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        transition: transform 0.3s;
+    }
+
+    .clickable-text:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+        color: rgb(65, 29, 29);
+    }
+</style>
+
+    <p>I aim to explore a more traditional painting technique in the medium of digital painting, 
+        utilizing an underpainting method as the foundation, which I then layered upon to create a more visually dimensional environment for the depiction of hands.
+        By employing a diverse range of intricate and vibrant colors to construct the hands, my objective was to convey the intricate emotional spectrum experienced by individuals during this unparalleled period. 
+        The intention was to encapsulate the complexity, confusion, and emotional depth felt by people amidst the uncertain times.
+    </p>
+    <p>
+        Embracing abstraction as a significant design element, 
+             I incorporated it to integrate the hands as the central subject in my interpretation of the pandemic. 
+        This allowed the hands to serve as a representation of my perspective during this period of crisis.
+    </p>
+        In the final stages of my painting process, I delicately layered thin white lines to evoke a sense of displacement and separation
+    </p>
+  </section>
+
+  <section class="layout--copy2 lh-copy">
+    <p class="mt0">
+        The onset of the <a href="https://www.cdc.gov/museum/timeline/covid19.html">COVID-19 pandemic</a> in February 2020 brought an unprecedented and unexpected wave of change, altering life as I knew it. 
+        This change felt overwhelming, just like it did for many others. 
+        It was a time of worry and confusion, as everything we knew shifted so suddenly. 
+        Uncertainty and anxiety became constants as familiar routines and plans swiftly changed.
+    </p>
+    
+    <p>
+        In response to this turbulent period, I created a painting using hands as symbols to capture the collective experience. 
+    </p>
+
+    <p>The interlocked hands in the artwork reflect the struggle and confusion that was pervasive. 
+        They represent the attempt to connect in a time where everything seemed to slip away, portraying the difficulties we all faced in comprehending and adapting to this swift and unexpected change.</p>
+
+    <p>
+        Amidst this chaos, my intention with this painting was to honor and acknowledge those who faced even greater hardships during that challenging time. 
+    </p>
+
+    <p>
+        The artwork stands as a tribute to individuals who bore heavier burdens, signifying solidarity and support for those who were enduring more significant struggles. 
+    </p>
+
+    <p>
+        It's a visual recognition of the difficulties faced by others during the commencement and height of the pandemic.
+    </p>
+  </section>
+
+  
+
+<!--Reponsive-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.min.css">
+</body>
+
+<!--Background Color Change-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.scrollY;
+        const maxScroll = document.body.clientHeight - window.innerHeight;
+        const scrollFraction = scrollTop / maxScroll;
+        const hue = 40; //*For the orange color!
+        const saturation = 100; 
+        const lightness = 95 - (scrollFraction * 10); 
+        document.body.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+    });
+});
+
+</script>
+
+
+
+</html>
+

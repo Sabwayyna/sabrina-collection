@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/x-icon" href="favicon/Favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #d8d8d8;
+        }
+
+        #title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+            color: #1b1b1b;
+            font-weight: 700;
+        }
+
+        .image-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.2); 
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+
+        .hover-button {
+            padding: 10px 20px;
+            color: #202020;
+            border: 1px solid #191919;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .hover-button:hover {
+            background-color: #1b1b1b;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Placeholder images for storyboarding before initial filming</div>
+
+    <div class="image-container">
+        <img src="images/Storyboard.PNG" alt="Zoomable Image">
+    </div>
+
+    <div class="button-container">
+        <a href="Index.html" class="hover-button">Go Back</a>
+    </div>
+</body>
+</html>

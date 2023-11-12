@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <title>Looking Down the Ladder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Work+Sans:900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<link rel="icon" type="image/x-icon" href="favicon/favicon.png">
+
+
+</head>
+
+
+
+<!--Title Page with IMAGE-->
+<body>
+<section class="hero image-as-background" style="background-image: url('images/Big-Title-Image.png');">
+	<div class="hero-container">
+	
+    <p class="animate fadeInLeft delay-400" style="font-family: 'Inter', sans-serif; font-size: 1em; font-weight: 300;">An Experimental Film</p>
+	
+    <a href="https://sabwayyna.github.io/SabrinaWu.github.io/" class="animate fadeInRight delay-400 top-right-button">Homepage</a>
+
+	  <a href="https://thepolygon.ca/exhibition/chester-fields-2022-look-again/" target="_blank">
+		<h1 class="hero-title animate fadeInLeft delay-600">Looking Down the Ladder</h1>
+	</a>
+  
+	
+	  <a href="VideoShowcase.html" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Watch Film</a>
+	  <a href="Storyboard.html" class="hero-button animate fadeInLeft delay-800" title="Click to see more">See Storyboard</a>
+
+	</div>
+  </section>
+</body>
+
+<body>
+<!-- White Page Start -->
+
+<!--Style for Title changing image-->
+<style>
+    body {
+        margin: 0;
+      padding: 0;
+      background-image: url("images/Edit"); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+  </style>
+
+<div class="grid">
+	<div>
+		<header class="Small-Title">A Look Through of my first Experimental Film</header>
+		
+		<a href="Storyboard.html" class="feature-link">
+			<p class="feature-letter">?</p>
+		</a>
+		<p class="feature-intro start">In the moral hierarchy, all living beings find a place. Humanity has established itself at the pinnacle.</p>
+
+		<p class="feature-intro">A over-consumption of animal products and its horrendous production conditions within the industry is appalling,
+			hence, we tend to look away from this heavy, inextricable problem. This leads me to investigate the relationship between our morality and animal life. </p>
+		
+		<p class="feature-intro">This film visualizes the horrors within the exploitation of animals, disguised by our normalization – anarchy in the order of humanity.</p>
+
+		<p class="feature-intro"> This film is inspired by my zine’s exploration  <a href="https://sabwayyna.github.io/SabrinaWu.github.io/entry-6/Index.html">(Entry 6)</a> of horrors using distressing imagery. 
+			I want to visualize the zine’s fluidity within its continuous mark-making and abstraction through a film that creates an uncanny valley effect.
+			The zine’s grayscale overlaying pages reminded me of a storyboard, leading me to challenge myself by expressing my visualization through filmography.
+		</p>
+	</div>
+	
+<!--Screencaps Explanation-->
+<div>
+    <div class="nestedGrid">
+      <header class="Small-Title"> ↑ Screencaps Explanation</header>
+  
+<div class="text1">
+    <h2>Walking with obscure shawdows</h2>
+    <span>00:21</span>
+    <p>I wanted to showcase in a more literal manner on how human footprint are imprinted in this world.
+        Using clipping masks, I showed a video of trash over the shadows of people walking.
+        My overarching objective was to articulate the consequences stemming from our insatiable and, unrestrained consumption.
+    </p>
+    <div class="image-container" id="video-container">
+        <img class="image" src="images/Screencap-1.png" />
+        <div class="video-overlay">
+            <video autoplay muted loop controls>
+                <source src="video/Walking.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<!--Style for Screencaps to video-->
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .video-overlay video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container:hover .video-overlay {
+        opacity: 1;
+    }
+
+    .image-container:hover img {
+        opacity: 0; 
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var imageContainer = document.getElementById('video-container');
+        var videoOverlay = imageContainer.querySelector('.video-overlay');
+        var video = videoOverlay.querySelector('video');
+
+        imageContainer.addEventListener('mouseenter', function () {
+            videoOverlay.style.opacity = 1;
+            
+            video.play().catch(function (error) {
+                console.error('Error playing video:', error);
+            });
+        });
+
+        imageContainer.addEventListener('mouseleave', function () {
+           
+           
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+</script>
+
+<!--Screencap cont. -->
+
+<div class="text2">
+    <h2 class="hasBg">Eyes merged with a goat's eye</h2>
+    <span>00:40</span>
+    <p> I aim to convey the profound connection and shared experiences between animals and humans through the literal fusion of our eyes with those of a goat. 
+        The juxtaposition of a monotone video featuring human eyes superimposed onto the gaze of a goat serves as a visual metaphor, underscoring humanity's prevailing dominance over the animal kingdom and the broader natural realm. 
+    </p>
+
+    <div class="image-container" id="video-container-2">
+        <img class="image" src="images/Screencap-5.png" />
+        <div class="video-overlay">
+            <video autoplay muted loop controls>
+                <source src="video/Eye.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="text3">
+	<div class="image-container" id="video-container-3">
+        <img class="image" src="images/Screencap-2.png" />
+        <div class="video-overlay">
+            <video autoplay muted loop controls>
+                <source src="video/fish.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <h2 class="hasBg">Fish gasping</h2>
+    <span>00:37</span>
+
+    <p>
+        My objective is to showcase the journey of many captive-bred animals, tracing the path that leads them from
+        confinement to our dinner plates. In our attempts to disconnect from the animals we eat, we often suppress empathy
+        for these creatures. While witnessing a fish gasping for air may evoke sadness, that sentiment often fails to
+        translate when the same fish is lifeless on our plates.
+    </p>
+
+
+<!--Worm-->
+    <div class="image-container" id="video-container-3">
+        <img class="image" src="images/Screencap-3.png" />
+        <div class="video-overlay">
+            <video autoplay muted loop controls>
+                <source src="video/worm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <h2 class="hasBg">Worms tangling</h2>
+    <p>I aim for the imagery of these worms as a concept to encourage viewers to ponder their notions of both food and
+        ethical eating. Placed at the lower rungs of the morality ladder, the shot is a deliberate reflection on the
+        boundaries we establish in our perceptions of edibility and ethical consumption.
+    </p>
+
+<!--Earth-->
+    <div class="image-container" id="video-container-4">
+        <img class="image" src="images/Screencap-4.png" />
+        <div class="video-overlay">
+            <video autoplay muted loop controls>
+                <source src="video/earth.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <h2 class="hasBg">Abstract earth</h2>
+    <p>This shot aims to symbolize an abstracted portrayal of Earth, delving into the idea that ultimately, animals and
+        humans are interconnected synthetically on this planet.
+    </p>
+</div>
+
+<!--Style for Last 3 Screencaps-->
+<style>
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .video-overlay video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container:hover .video-overlay {
+        opacity: 1;
+    }
+
+    .image-container:hover img {
+        opacity: 0;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+       
+        var containers = document.querySelectorAll('.image-container');
+
+        containers.forEach(function (container) {
+            var videoOverlay = container.querySelector('.video-overlay');
+            var video = videoOverlay.querySelector('video');
+
+            container.addEventListener('mouseenter', function () {
+                
+                videoOverlay.style.opacity = 1;
+              
+                video.play().catch(function (error) {
+                    console.error('Error playing video:', error);
+                });
+            });
+
+            container.addEventListener('mouseleave', function () {
+                
+                videoOverlay.style.opacity = 0;
+               
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    });
+</script>
+</div>
+
+<p class="End-note">*I do not advocate to not consume meat at all; rather, I encourage viewers to to see biases in their moral perspectives. 
+	The aim is to show reflection on the ethical nuances surrounding our choices, fostering a more mindful approach to the complex relationship between our dietary preferences and the lives of the animals involved.</p>
+
+</div>
+</div>
+</body>
+</html>

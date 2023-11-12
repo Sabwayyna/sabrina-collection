@@ -1,0 +1,295 @@
+body {
+    cursor: url('images/cursor.png'), auto;
+}
+
+html{
+    font-size:100%;
+    font-family: 'Manrope', sans-serif;
+    }
+
+body{
+    margin:0 auto 24px;
+    padding:0 5%;
+    max-width:624px;
+    font-family: 'Manrope', sans-serif;
+    }
+ 
+    
+p{
+    line-height:1.5em;
+    }  
+
+/* IMAGE STYLES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.subhead-de, .subhead-en, .subhead-fr{
+margin-top:2rem;
+    }
+
+.subhead p{
+font-weight:700;
+}
+    
+/* (1270px) */
+@supports (display:grid){	
+@media (min-width:1024px){
+    
+    /* GEneral STYLES */	
+    body{
+        font-size:80%;
+        max-width:98%;
+        padding:0;
+        }
+    
+    #wrapper{
+        display:grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows:auto;
+        grid-column-gap:24px;
+        }
+        
+    h1{
+        margin-bottom:0;
+        grid-column:2 /5;
+        grid-row:1 / 2;
+        }
+
+p{
+      font-weight:700;
+    }
+
+    /* IMAGE STYLES */	
+    img{
+        grid-column:1 / 5;
+        grid-row:3 / 4;
+        }			
+           
+    /* SUB-HEAD STYLES */		
+    .subhead-de, .subhead-en, .subhead-fr{
+  margin-top:0;
+  margin-bottom:6rem;
+    }
+        
+    .subhead-de{
+        grid-column:2 / 3;
+        grid-row:2 / 3;
+        }
+        
+    .subhead-en{
+        grid-column:3 / 4;
+        grid-row:2 / 3;
+        }
+        
+    .subhead-fr{
+        grid-column:4 / 5;
+        grid-row:2 / 3;
+        }
+
+    /* BODYTEXT STYLES */
+    .bodytext-de, .bodytext-en, .bodytext-fr{
+        margin-top:1rem;
+        }	
+                
+    .bodytext-de{
+        grid-column:2 / 3;
+        grid-row:4 / 5;
+        }
+        
+    .bodytext-en{
+        grid-column:3 / 4;
+        grid-row:4 / 5;
+        }
+        
+    .bodytext-fr{
+        grid-column:4 / 5;
+        grid-row:4 / 5;
+        }	
+    }
+/* (1280px) */
+
+@media (min-width:1280px){
+    
+
+body{
+  font-size:100%;
+}
+}
+
+/*Image Slide Style*/
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .1s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.3;
+    margin: 7px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+}
+
+
+
+@media (max-width: 767px) {
+    .carousel {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    ul.slides {
+        height: 300px; 
+    }
+
+    .slide-image {
+        height: 100%;
+        opacity: 1; 
+        transform: scale(1); 
+    }
+
+    .carousel-controls {
+        font-size: 60px; 
+        line-height: 300px; 
+    }
+
+    .carousel-dots {
+        bottom: 10px;
+    }
+
+    .carousel-dots .carousel-dot {
+        width: 20px; 
+        height: 20px;
+        margin: 5px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   
+}
+
+@media (min-width: 1024px) {
+   
+}

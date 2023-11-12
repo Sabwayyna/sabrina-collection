@@ -1,0 +1,186 @@
+
+/* ==========================================================================
+
+	FONT!
+
+========================================================================== */
+
+@import 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300;1,400;1,500;1,600;1,900&display=swap';
+
+
+/* general Styles! */
+
+.Art-Image img {
+	border: 0 !important;
+	outline: none !important;
+  }
+  
+h1, h2, h3, h4, h5 ,h6, body, title, header {font-family: 'Raleway', sans-serif}
+
+body{ background-color:#FFF; font-family: 'Raleway', sans-serif; color:#848484; font-weight:300; font-size:14px; line-height:27px; overflow-x: none}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {display: block}
+
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+
+h1,h2,h3,h4,h5,h6{ color:#343434}
+
+::-moz-selection {background: #222222;color:#ffF;text-shadow: none;}
+
+::selection {background: #222222;color:#ffF;text-shadow: none;}
+
+a,input,textarea,button,body,img{transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
+
+
+img {
+	border: none;
+  }
+  
+
+a {text-decoration: none;outline: none;color: #222222;}
+
+a:hover{ text-decoration:none; color:#222222}
+
+a:focus, img:focus, button:focus, .btn:focus {outline:none;text-decoration: none;}
+
+/* Header! */
+
+.header { padding-top:22px; padding-bottom:3px}
+
+.header.header-fixed-top{ width:100%; position:fixed; top:0;background-color:rgba(255,255,255,0.9); z-index:60; padding:10px 0}
+
+.header.header-fixed-top .menu-expanded{ padding-top:15px}
+
+.header hgroup{ padding:0 15px; overflow:hidden}
+
+.header hgroup h1{ padding:0; margin:0}
+
+.header hgroup h1 a{ display:block; float:left; max-width:81px}
+
+/*Complicated Animation ahhhh*/
+
+.over {transform: scale(100);transition: all 0.350s ease-in;cursor: default;}
+
+.linea1 {background: #222222;height: 2px;width: 15px;position: absolute;right: 33px;top: 33px;z-index:90;transition: all 0.3s;opacity:0}
+
+.linea1.overL1,.linea3.overL3{opacity:1}
+
+.linea2 {background: #222222;height: 2px;width: 15px;position: absolute;right: 33px;top: 38px;opacity: 1;transition: opacity 0.5s;z-index:90;opacity:0}
+
+.linea3 {background: #222222;height: 2px;width: 15px;position: absolute;right: 33px;top: 43px;z-index:90;opacity:0}
+
+.overL1 {animation: closetop 1s forwards;animation-direction: alternate;cursor: pointer;}
+
+.overL2 {opacity: 0;transition: opacity 0.5s;cursor: pointer;}
+
+.overL3 {animation: closebottom 1s forwards;animation-direction: alternate;cursor: pointer;}
+
+@keyframes closetop {
+
+0% {transform: translateY(5px) rotate(0deg);}
+
+25% {transform: translateY(5px) rotate(0deg);}
+
+75% {transform: translateY(5px) rotate(-45deg);}
+
+100% {transform: translateY(5px) rotate(-45deg);}
+
+}
+
+@keyframes closebottom {
+
+0% {transform: translateY(0px) rotate(0deg);}
+
+25% {transform: translateY(-5px) rotate(0deg);}
+
+75% {transform: translateY(-5px) rotate(45deg);}
+
+100% {transform: translateY(-5px) rotate(45deg);}
+
+}
+
+.main-menu {visibility: hidden;text-align:center;opacity: 0;transition: all 0.300s;transition-delay: 0s;}
+
+.overmain {visibility: visible;background-color:rgba(255,255,255,0.8);opacity: 1; z-index:60; top:0;padding-top:10%;transition: all 0.400s;
+
+ transition-delay: 0.370s;}
+
+.main-menu ul {list-style-type: none; text-align:center; margin:0; padding:0; }
+
+.main-menu ul li {width:100%; display:inline-block;font-family: 'Raleway', sans-serif; text-transform:uppercase; font-size:30px; margin-bottom:30px; font-weight:400; position:relative;z-index:1;  transition: all 0.400s;transition-delay: 0.370s;}
+
+.main-menu ul li{ position:relative; ; }
+
+.main-menu ul li:after {content: "";position:absolute;bottom:52%; left:0; right:0; margin:0 auto;width:0; height:1px;background:#222222;
+
+z-index:2;transition: width 0.3s; z-index:1}
+
+.main-menu ul li:hover:after{ width:15%; }
+
+.main-menu ul li.active:after{ width:15%;}
+
+.main-menu ul li a {text-decoration: none; color:#222222; position:relative; z-index:2; display:block}
+
+/* Main Box */
+
+.main-wrapper,.main-wrapper-inner{background-color:#FFF;position:relative; z-index:6;}
+
+.wrapper{background-color:#FFF; padding:0 25px;position:relative; z-index:6; margin-bottom:396px}
+
+/* Footer Sizing + Styles */
+
+.footer{ background-color:#222222; position:fixed; z-index:1; width:100%; bottom:0; left:0; right:0; padding-top:104px; padding-bottom:115px; text-align:center; color:#999999; font-size:10px; letter-spacing:1px; font-weight:400}
+
+.footer a{ color:#999999;}
+
+.footer a:hover{ color:#FFF}
+
+.footer img{ margin:0 auto}
+
+.footer h3{ text-align:center; color:#FFF;font-family: 'Raleway', sans-serif; text-transform:uppercase; letter-spacing:2px; font-size:21px; position:relative}
+
+.footer h3:after{ content:""; margin:0 auto; display:block; position:absolute; bottom:-20px; left:0; right:0; width:63px; height:3px; background-color:#FFF}
+
+.footer p{ line-height:12px; font-weight:300}
+
+.footer-bot{ padding-top:58px}
+
+.copy-right{ padding-top:14px}
+
+.padding-top{ padding-top:16px}
+
+.made-by i{ color:#e8496a}
+
+.social{ text-align:center; padding:0; margin:0; list-style:none}
+
+.social li{ display:inline-block; margin:0 5px; font-size:12px}
+
+
+
+.main-wrapper-inner{ margin-bottom:396px}
+
+.wrapper-inner{ margin:auto; width:100%; max-width:1031px; padding-top:71px; padding-bottom:20px}
+
+.inner-left{ float:left; width:100%; max-width:331px}
+
+.inner-right{ float:right; width:100%; max-width:700px}
+
+.wrapper-inner p{ color:#343434; font-size:13px; line-height:30px; font-weight:400;padding-bottom:20px; font-weight:300}
+
+/* Details */
+
+.details-content,.about-content,.contact-wrapper{ overflow:hidden}
+
+.details-left header h3,.about-content h3{ color:#343434; margin-top:0}
+
+.details-left header h4,.details-left header h5{ font-size:13px; margin-top:0; font-weight:400}
+
+.details-left header h4{ font-weight:600; padding-top:22px}
+
+.details-content header{ margin-bottom:67px}
+
+.details-content header h2,.details-content header h3{ font-size:13px; font-weight:400;margin-top:0}
+
+.details-content header h2{ font-weight:600; }
+
+.details-image{ margin-bottom:80px}
