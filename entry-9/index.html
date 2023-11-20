@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Ticket on the Boat Ride</title>
+
   <link href="https://fonts.googleapis.com/css?family=Jura:400,700|Questrial|Inconsolata:400,700|Montserrat:900|Old+Standard+TT:700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="favicon/favicon.png">
 </head>
 
 <body>
@@ -28,9 +30,32 @@
           <div class="number">
             <div>GO</div>
             <style>
+              
               .number div {
             font-size: 60px; 
             }
+            @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                text-shadow: 0 0 20px rgb(255, 255, 255);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: gold; 
+            animation: glow 4s infinite; 
+        }
+
+        body {
+            cursor: url('images/cursor.png'), auto;
+        }
             </style>
           </div>
         </a>
@@ -89,9 +114,7 @@
           opacity: 75%;
         }
       </style>
-      
-   
-      
+    
       <div class="barcode">
         <div class="barcode__scan"></div>
         <div class="barcode__id">0011252004</div>
@@ -126,8 +149,6 @@
 </div>
 
 </body>
-
-
 
 <style>
 

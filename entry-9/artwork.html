@@ -11,14 +11,16 @@
 
 <a href="https://sabwayyna.github.io/sabrina-collection/" class="animate fadeInRight delay-400 top-right-button">Homepage</a>
 
+<link rel="icon" type="image/x-icon" href="favicon/favicon.png">
 
+</head>
 
 <body>
   <!-- Video Background -->
   <div class="video-container">
       <video autoplay loop muted>
           <source src="videos/video_BG.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+  
       </video>
 
       <style>
@@ -39,20 +41,13 @@
         }
       </style>
 
-
-
     <script>
       var video = document.querySelector('video');
 
       video.playbackRate = 0.8;
   </script>
   </div>
-
-
 </body>
-
-
-
 <body>
   <style>
 .music-button {
@@ -78,7 +73,7 @@
 
   </style>
 
-  <!-- Play Music Button -->
+  <!--  Music Button -->
   <a href="#" onclick="toggleMusic()" class="music-button">Play Ambience Sound</a>
 
   <!-- Audio for Background Music -->
@@ -104,10 +99,7 @@
   </script>
 </body>
 
-
 <style>
-
-
 .top-right-button {
 font-family: 'Inter', sans-serif;
 position: fixed;
@@ -142,64 +134,9 @@ background-color: #ffffff;
     // Acrylic on canvas, Digital Manipulation - 2019 to 2023 </p>
 </div>
 
-
 <div class="spacer"></div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Text Size Example</title>
-  <style>
-    h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: 80px; /* Adjusted the font size for better visibility */
-      font-weight: 700;
-      color: rgb(8, 11, 51);
-      letter-spacing: 0.02em;
-      perspective: 500px;
-      text-align: center; /* Center the text */
-      margin: 0; /* Remove default margin to ensure full width */
-    }
 
-    h1::before,
-    h1::after {
-      content: attr(aria-label);
-      position: absolute;
-      top: 50%; /* Adjusted to center vertically */
-      left: 50%; /* Adjusted to center horizontally */
-      transform: translate(-50%, -50%);
-      text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
-    }
-
-    h1::before {
-      animation: floatAbove 3.5s ease-in-out infinite;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
-    }
-
-    h1::after {
-      opacity: 0.65;
-      filter: blur(0.02em);
-      transform: translate(-50%, -50%) rotateX(21deg);
-      animation: floatBelow 3.5s ease-in-out infinite;
-      clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
-    }
-
-    @keyframes floatAbove {
-      50% {
-        transform: translate(-50%, -60%);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
-      }
-    }
-
-    @keyframes floatBelow {
-      50% {
-        transform: translate(-50%, -60%) rotateX(10deg);
-        clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
-      }
-    }
-  </style>
 </head>
 <body>
   <div>
@@ -213,35 +150,31 @@ background-color: #ffffff;
 
 <div class="spacer"></div>
 
-
 <article class="article-1">
   <p>
-    Three years ago marked the inception of this acrylic painting, 
-      a humble attempt to encapsulate an extraordinary, albeit seemingly impossible, 
-        depiction of the night sky. Back then, my artistic skills struggled to align with the ambitious vision I envisioned. 
-    Frustration mounted as progress lagged, eventually leading to the decision to set aside the incomplete piece. 
-    It became a dormant testament to the gap between aspiration and execution.
+    Three years ago marked the beginning of my first large-scale acrylic painting, 
+      a humble attempt to encapsulate an extraordinary, seemingly impossible
+        depiction of the night sky. 
+    Back then, my artistic skills struggled to align with the ambitious vision I envisioned. 
+    Frustration mounted as I was progressing slowly into the painting, and eventually I gave up, and set aside the incomplete piece. 
+    It became evident that there was a gap between aspiration and execution.
 
+    Over the course of three years as I improved with painting and with an evolved perspective, I revisited this dreamscape. 
+    This time, I had not only with improved technical skills but also with a renewed sense of determination and perseverance.
 
-    Over the course of the intervening three years, a transformative journey unfolded. Armed with an evolved perspective, 
-      refined blending techniques, and a nuanced understanding of color, 
-        I revisited the dormant dreamscape. 
-    This time, I was equipped not only with enhanced technical skills but also with a renewed sense of determination and perseverance.
-
-    In reclaiming and reviving the original vision onto the canvas, 
-      I introduced a symbolic element—a boat navigating through the reflective cerulean water. 
-    This addition served as a metaphor for my journey, mirroring my resilience and self-improvement. 
-    The tranquil waters reflected not only the sky above but also the personal growth and perseverance that navigated the passage of time.
-    The completion of this piece is a testament to the transformative power of time and dedication. 
-    What was once deemed "impossible" in the initial stages of this artwork is now a vivid representation of the expansive possibilities that unfold between the commencement and completion of a creative endeavor. It stands as a reminder that our perception of what is achievable is often constrained by our current vantage point and can dramatically shift with time and growth.
-
+    In reclaiming and reviving my original vision onto the canvas, I added a symbolic element: a boat navigating through the reflective cerulean water. 
+    This addition served as a metaphor for my journey, mirroring my journey and self-improvement. 
+    
+    The completion of this piece is the result of gradual time and dedication. 
+    What was once deemed "impossible" for me is now a vivid representation of the possibilities.
+    It stands as a reminder that my perception of what is achievable is often constrained by what I believe is impossible.
 
   </p>
 </article>
 <div class="image-grid">
   <div class="image-2"></div>
   
-  <!-- partial:index.partial.html -->
+  <!-- Image Carousel! -->
   <div>
     <div class="carousel">
       <ul class="slides">
@@ -251,7 +184,7 @@ background-color: #ffffff;
             <img src="images/Carousel-1.png">
           </div>
           <div class="carousel-controls">
-            <label for="img-3" class="prev-slide">
+            <label for="img-6" class="prev-slide">
               <span>&lsaquo;</span>
             </label>
             <label for="img-2" class="next-slide">
@@ -340,185 +273,39 @@ background-color: #ffffff;
       </ul>
     </div>
   </div>
-  
-  <style>
-    .carousel {
-      margin-left: 15%;
-      margin-right: 15%;
-  }
-  
-  ul.slides {
-      display: block;
-      position: relative;
-      height: 753px;
-      width: 364px;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      list-style: none;
-  }
-  
-  .slides * {
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -khtml-user-select: none;
-      -webkit-user-select: none;
-      -webkit-touch-callout: none;
-  }
-  
-  ul.slides input {
-      display: none; 
-  }
-  
-  
-  .slide-container { 
-      display: block; 
-  }
-  
-  .slide-image {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      opacity: 0;
-      transition: all .7s ease-in-out;
-  }   
-  
-  .slide-image img {
-      width: auto;
-      min-width: 100%;
-      height: 100%;
-  }
-  
-  .carousel-controls {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      font-size: 100px;
-      line-height: 600px;
-      color: #fff;
-  }
-  
-  .carousel-controls label {
-      display: none;
-      position: absolute;
-      padding: 0 20px;
-      opacity: 0;
-      transition: opacity .2s;
-      cursor: pointer;
-  }
-  
-  .slide-image:hover + .carousel-controls label{
-      opacity: 0.5;
-  }
-  
-  .carousel-controls label:hover {
-      opacity: 1;
-  }
-  
-  .carousel-controls .prev-slide {
-      width: 49%;
-      text-align: left;
-      left: 0;
-  }
-  
-  .carousel-controls .next-slide {
-      width: 49%;
-      text-align: right;
-      right: 0;
-  }
-  
-  .carousel-dots {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 20px;
-      z-index: 999;
-      text-align: center;
-  }
-  
-  .carousel-dots .carousel-dot {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #fff;
-      opacity: 0.5;
-      margin: 10px;
-  }
-  
-  input:checked + .slide-container .slide-image {
-      opacity: 1;
-      transform: scale(1);
-      transition: opacity 1s ease-in-out;
-  }
-  
-  input:checked + .slide-container .carousel-controls label {
-       display: block; 
-  }
-  
-  input#img-1:checked ~ .carousel-dots label#img-dot-1,
-  input#img-2:checked ~ .carousel-dots label#img-dot-2,
-  input#img-3:checked ~ .carousel-dots label#img-dot-3,
-  input#img-4:checked ~ .carousel-dots label#img-dot-4,
-  input#img-5:checked ~ .carousel-dots label#img-dot-5,
-  input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-    opacity: 1;
-  }
-  
-  
-  input:checked + .slide-container .nav label { display: block; }
-  </style>
 
-<div class="text-3">Within the carousel on the left, a compelling chronicle unfolds, meticulously capturing the nuanced progression of my painting over a span of three transformative years—from its inception in 2019 to its culmination in 2023. This digital archive serves as an intimate reflection of my artistic journey, revealing the ebb and flow of creative impulses and technical prowess that have shaped the canvas.
+<div class="text-3">
+  The carousel on the left shows the progression of my painting over a span of three  years—from its start in 2019 to its end in 2023. 
+  This archive serves as a reflection of my artistic journey, 
+    revealing the highs and down of my creative impulses and technical improvement that have shaped the canvas.
 
-  The first sub-finish, marking the initial completion in the early stages, bears the imprint of a moment of artistic struggle. Faced with the formidable challenge of aligning my vision with the tangible execution, a temporary sense of defeat prompted me to halt progress. This juncture signifies not only a pause in the artistic process but a pivotal moment of introspection, 
-    where the realization of the gap between aspiration and realization prompted a deeper exploration of my creative vision.
+  When I first gave up in 2019, it was in a moment of artistic struggle. 
+  I was faced with the challenge of aligning my vision with a tangible execution, 
+    a temporary sense of defeat prompted me to stop painting. 
+  This problem signifies not only a pause in the painting process but a pivotal moment of self-doubt, 
+    where I realized the gap between aspiration and my creative vision.
 
-
-    So starting my revision, I wanted to plan carefully on how I would paint back into this artwork, something
+    So starting my revision in 2020, I wanted to plan carefully on how I would paint back into this artwork, a process
       I have never done before. This the <a href="process.html">process</a> for the initial ideas for my second revision.
-  
 </div>
 
+<div class="text-below">
+  Into a second phase of my revision, with newfound painting skills I revisited the canvas for fun.
+  During this re-painting, it showed my growth as an artist and also my artistic perspective. I aimed on transforming this into a vibrant expression of my evolving creative identity.
 
-<div class="text-below">The narrative unfolds into a second phase, resonating with the period designated for portfolio building. Here, armed with newfound painting skills and an enriched artistic sensibility, I revisited the dormant canvas. The second sub-finish became a testament to my resilience and growth as an artist. It marked a renaissance, where the fusion of honed skills and a refined artistic perspective breathed new life into the painting, transforming it into a vibrant expression of my evolving creative identity.
+  The final chapter of painting also is revised in 2023, with digital painting experience that prompted a fresh perspective. 
+  In this iteration, digital manipulation emerged as a tool for me to extend the boundaries of traditional mediums. 
+  I painted on top, adding small details such as more stars and colors to enhance the depth of the painting.
 
-The final chapter of this visual diary unfolds in 2023, coinciding with a class project that prompted a fresh perspective. In this iteration, digital manipulation emerged as a tool to extend the boundaries of traditional mediums. The third sub-finish encapsulates a harmonious synthesis of traditional craftsmanship and contemporary technology, allowing me to revisit the initial finished painting and infuse it with newfound layers of depth and complexity.
+  For expanding the orginial painting into a landscape (for the sake of this entry), using ai, I expanded the borders of the painting.
+  The third revision encapsulates a connection of traditional painting and contemporary technology, allowing me to revisit the initial finished painting and infuse it with newfound layers of depth and complexity.
 
-The carousel stands not only as a temporal archive but as a testament to the iterative nature of the artistic process. Each sub-finish represents a unique chapter in my artistic evolution, marked by setbacks, rejuvenation, and a seamless integration of traditional and contemporary techniques. It is a visual record of my growth, a testament to the perpetual dialogue between imagination and execution that defines the trajectory of my artistic journey.
-
-
-
-
-
+  This long painting process stands as an archive of my artistic process. 
+  Each sub-finish represents a unique chapter in my artistic evolution, marked by setbacks, improvements, and learning new mediums and technology. It is a visual record of my past imagination and different periods of execution that defines the trajectory of my artistic journey.
 </div>
-
-
-
-
 
 <div class="caption caption-4">
   <p><a href="index.html">go back to ticket</a></p>
-
-  <style>
-    .caption-4 a {
-    color: inherit; /* Inherit the color from the parent */
-    text-decoration: none; /* Remove underline */
-    transition: opacity 0.3s ease; /* Smooth opacity transition */
-}
-
-.caption-4 a:hover {
-    opacity: 0.3;
-    text-decoration: dotted;
-
-}
-
-  </style>
 </div>
 </div>
 
@@ -532,7 +319,6 @@ The carousel stands not only as a temporal archive but as a testament to the ite
 <div class="caption caption-1">
   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit voluptas velit</p>
 </div>
-<!-- partial -->
   
 </body>
 

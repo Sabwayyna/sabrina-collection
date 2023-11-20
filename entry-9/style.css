@@ -1,6 +1,201 @@
+body {
+  cursor: url('images/cursor.png'), auto;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 80px; 
+  font-weight: 700;
+  color: rgb(8, 11, 51);
+  letter-spacing: 0.02em;
+  perspective: 500px;
+  text-align: center; 
+  margin: 0; 
+}
+
+h1::before,
+h1::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+}
+
+h1::before {
+  animation: floatAbove 3.5s ease-in-out infinite;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+h1::after {
+  opacity: 0.65;
+  filter: blur(0.02em);
+  transform: translate(-50%, -50%) rotateX(21deg);
+  animation: floatBelow 3.5s ease-in-out infinite;
+  clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+@keyframes floatAbove {
+  50% {
+    transform: translate(-50%, -60%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+  }
+}
+
+@keyframes floatBelow {
+  50% {
+    transform: translate(-50%, -60%) rotateX(10deg);
+    clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+  }
+}
+
+.caption-4 a {
+color: inherit;
+text-decoration: none; 
+transition: opacity 0.3s ease; 
+}
+
+.caption-4 a:hover {
+opacity: 0.3;
+
+}
+
+
+.carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 753px;
+  width: 364px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none; 
+}
+
+
+.slide-container { 
+  display: block; 
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+   display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
 
 .spacer {
-  height: 70px; /* Adjust the height of the empty space as needed */
+  height: 70px; 
 }
 
 body {
@@ -87,9 +282,9 @@ img {
 }
 
 .image-4 {
-  width: 100%; /* Make the image fill the entire width of its container */
-  height: auto; /* Maintain the aspect ratio of the original image */
-  max-height: 300px; /* Set a maximum height if needed */
+  width: 100%;
+  height: auto; 
+  max-height: 300px; 
   grid-row: 3;
   grid-column: 8/span 5;
 }
@@ -130,13 +325,13 @@ img {
 }
 
 .caption-4 a {
-  color: inherit; /* Inherit the color from the parent */
-  text-decoration: none; /* Remove underline */
-  transition: opacity 0.3s ease; /* Smooth opacity transition */
+  color: inherit; 
+  text-decoration: none; 
+  transition: opacity 0.3s ease;
 }
 
 .caption-4 a:hover {
-  opacity: 0.7; /* Adjust the opacity level as needed */
+  opacity: 0.7; 
 }
 
 
@@ -160,5 +355,35 @@ img {
 @media (min-width: 600px) {
   .article-2 {
     margin-left: 25%;
+  }
+}
+
+
+  /* Responsive Text */
+
+@media only screen and (max-width: 600px) {
+  .music-button,
+  .top-right-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  article {
+      padding: 10px;
+  }
+
+  body,
+  p,
+ 
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-size: 13px;
+  }
+
+h1 {
+      font-size: 45px;
   }
 }
