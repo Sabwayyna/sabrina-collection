@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Painting Process Carousel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+
+<a href="artwork.html" class="homepage">Back</a>
+
+<link rel="icon" type="image/x-icon" href="images/favicon copy.png">
+
+
+
+  <!-- Image Carousel! -->
+  
+    <div class="carousel">
+      <ul class="slides">
+        <input type="radio" name="radio-homepages" id="img-1" checked />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-1 copy.png">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-6" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-2" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-homepages" id="img-2" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-2 copy.png">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-1" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-3" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-homepages" id="img-3" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-3 copy.png">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-2" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-4" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-homepages" id="img-4" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-4 copy.png">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-3" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-5" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-homepages" id="img-5" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-5 copy.jpg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-4" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-6" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-homepages" id="img-6" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="images/Carousel-6 copy.jpg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-5" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-1" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <div class="carousel-dots">
+          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+          <label for="img-4" class="carousel-dot" id="img-dot-3"></label>
+          <label for="img-5" class="carousel-dot" id="img-dot-3"></label>
+          <label for="img-6" class="carousel-dot" id="img-dot-3"></label>
+        </div>
+      </ul>
+    </div>
+ 
+  
+<style>
+
+body {
+  cursor: url('images/cursor\ copy.png'), auto;
+}
+
+.carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 753px;
+  width: 364px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none; 
+}
+
+
+.slide-container { 
+  display: block; 
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+   display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+        body {
+  cursor: url('images/cursor.png'), auto;
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        .image-container {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 448px;
+            height: 531px;
+            transition: transform 0.5s;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-container .text-overlay {
+            position: absolute;
+            font-family: 'Inter', sans-serif;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-container:hover .text-overlay {
+            opacity: 1;
+        }
+
+        .homepage-container {
+            text-align: center;
+        }
+
+        
+
+        .homepage {
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(52, 119, 219);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .homepage:hover {
+      background-color: #293fb9;
+    }
+
+   
+</style>
+
+</head>
+</html>

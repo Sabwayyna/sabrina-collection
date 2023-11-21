@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Reflection</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon copy.png">
+</head>
+
+<a href="https://sabwayyna.github.io/sabrina-collection/" class="animate fadeInRight delay-400 top-right-button">Homepage</a>
+
+<body>
+
+    <style>
+
+
+body {
+  cursor: url('images/cursor\ copy.png'), auto;
+}
+
+.top-right-button {
+font-family: 'Inter', sans-serif;
+position: fixed;
+top: 20px;
+right: 20px;
+color: #ffffff;
+font-size: 18px;
+padding: 10px 20px;
+border: 1px solid #ffffff;
+border-radius: 5px;
+text-decoration: none;
+overflow: hidden;
+transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.top-right-button:hover {
+display: block;
+color: #000000;
+background-color: #ffffff;
+}
+        .music-button {
+            font-family: 'Inter', sans-serif;
+            position: fixed;
+            top: 20px;
+            left: 20px; 
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            z-index: 1000;
+        }
+        
+        .music-button:hover {
+            color: #000000;
+            background-color: #ffffff;
+        }
+        
+          </style>
+        
+          <!--  Music Button -->
+          <a href="#" onclick="toggleMusic()" class="music-button">Play Ambience Sound</a>
+        
+          <!-- Audio for Background Music -->
+          <audio id="background-music" loop>
+              <source src="music/music copy.mp3" type="audio/mpeg">
+              <source src="music/music.ogg" type="audio/ogg">
+          </audio>
+        
+          <!-- Script for Music Playback -->
+          <script>
+              let isPlaying = false;
+              const bgMusic = document.getElementById('background-music');
+        
+              function toggleMusic() {
+                  if (isPlaying) {
+                      bgMusic.pause();
+                  } else {
+                      bgMusic.volume = 0.3;
+                      bgMusic.play();
+                  }
+                  isPlaying = !isPlaying;
+              }
+          </script>
+        </body>
+
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay loop muted>
+        <source src="videos/video_BG copy.mp4" type="video/mp4">
+
+    </video>
+
+    <style>
+       .video-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          overflow: hidden;
+      }
+
+      video {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+    </style>
+
+  <script>
+    var video = document.querySelector('video');
+
+    video.playbackRate = 0.8;
+</script>
+</div>
+
+<!-- style for animation Title -->
+
+<style>
+    h1 {
+       position: relative;
+       font-family: 'Inter', sans-serif;
+       font-size: 10em;
+       font-weight: 700;
+       color: #090716;
+       letter-spacing: 0.02em;
+       text-transform: uppercase;
+       perspective: 500px;
+       text-align: center !important;
+   }
+   
+   h1::before,
+   h1::after {
+       content: attr(aria-label);
+       position: absolute;
+       top: 0;
+       left: 0;
+       transform: translate(-50%, -50%);
+       text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+   }
+   
+   h1::before {
+       animation: floatAbove 3.5s ease-in-out infinite;
+       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+               clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+   }
+   
+   h1::after {
+       opacity: 0.65;
+       filter: blur(0.02em);
+       transform: translate(-50%, -50%) rotateX(21deg);
+       animation: floatBelow 3.5s ease-in-out infinite;
+       -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+               clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+   }
+   
+   @keyframes floatAbove {
+       50% {
+           transform: translate(-50%, -60%);
+           -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+                   clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+       }
+   }
+   
+   @keyframes floatBelow {
+       50% {
+           transform: translate(-50%, -60%) rotateX(10deg);
+           -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+                   clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+       }
+   }
+   
+   </style>
+   <main>
+       <article>
+           <header> 
+            <img src="images/Dreamscape copy.jpg" alt="" class="glow-image">
+           </header>
+   
+           <div>
+            <a href="process.html">
+              <h1 aria-label="Reflection"></h1>
+          </a>
+   <div class="multicol">
+   
+
+    <div class="spacer"></div>
+
+   
+<h2> 47” x 24” // Acrylic on canvas, Digital Manipulation - 2019 to 2023</h2>
+
+<p>Three years ago marked the beginning of my first large-scale acrylic painting. </p>
+
+<p>It was a humble attempt to encapsulate an extraordinary, seemingly impossible depiction of the night sky. Back then, my artistic skills struggled to align with the ambitious vision I envisioned. Frustration mounted as I was progressing slowly into the painting, and eventually I gave up, and set aside the incomplete piece. 
+    It became evident that there was a gap between aspiration and execution.
+    Over the course of three years as I improved with painting and with an evolved perspective, I revisited this dreamscape. 
+    This time, I had not only with improved technical skills but also with a renewed sense of determination and perseverance.
+
+</p>
+<p> In reclaiming and reviving my original vision onto the canvas, I added a symbolic element: a boat navigating through the reflective cerulean water. 
+    This addition served as a metaphor for my journey, mirroring my journey and self-improvement. 
+    
+    The completion of this piece is the result of gradual time and dedication. 
+    What was once deemed "impossible" for me is now a vivid representation of the possibilities.
+    It stands as a reminder that my perception of what is achievable is often constrained by what I believe is impossible.</p>
+</div>
+
+<img src="images/6Paintings.jpg" alt="6 paintings" class="hover-zoom">
+
+<div class="multicol">
+
+<p>The  <a href="carousel.html" class="custom-link">carousel</a> shows the progression of my painting over a span of three years—from its start in 2019 to its end in 2023. 
+    This archive serves as a reflection of my artistic journey, revealing the highs and downs of my creative impulses and technical improvement that have shaped the canvas.
+ 
+    
+    When I first gave up in 2019, it was in a moment of artistic struggle. 
+    I was faced with the challenge of aligning my vision with a tangible execution, a temporary sense of defeat prompted me to stop painting. 
+    This problem signifies not only a pause in the painting process but a pivotal moment of self-doubt, where I realized the gap between aspiration and my creative vision.
+
+    So starting my revision in 2020, I wanted to plan carefully on how I would paint back into this artwork, a process I have never done before. 
+    This the <a href="process.html"class="custom-link">process</a> for the initial ideas for my second revision.
+    </p>
+
+    <p>
+        Into a second phase of my revision, with newfound painting skills, I revisited the canvas for fun. 
+        During this re-painting, it showed my growth as an artist and also my artistic perspective. 
+        I aimed at transforming this into a vibrant expression of my evolving creative identity.
+
+        The final chapter of painting also is revised in 2023, with digital painting experience that prompted a fresh perspective. 
+      In this iteration, digital manipulation emerged as a tool for me to extend the boundaries of traditional mediums. 
+      I painted on top, adding small details such as more stars and colors to enhance the depth of the painting.
+    </p>
+    <p>
+    For expanding the original painting into a landscape (for the sake of this entry), using AI, I expanded the borders of the painting. 
+      The third revision encapsulates a connection of traditional painting and contemporary technology, allowing me to revisit the initial finished painting and infuse it with newfound layers of depth and complexity.
+      This long painting process stands as an archive of my artistic process. 
+      Each sub-finish represents a unique chapter in my artistic evolution, marked by setbacks, improvements, and learning new mediums and technology. 
+      It is a visual record of my past imagination and different periods of execution that define the trajectory of my artistic journey.
+    </p>
+</div>
+
+<style>
+    .custom-link {
+        text-decoration: underline;
+    }
+</style>
+
+<p class="credits">Go Back to <a href="Index.html">Ticket</a></p>
+<p class="credits">See Brainstorming of <a href="process.html">Painting</a></p>
+   
+</div>
+</article>
+</main>
+
+  
+</body>
+</html>
