@@ -1,0 +1,350 @@
+.section {
+  height: 100vh;
+  /*border: red 1px solid;*/
+}
+
+.rfa-wrapper {
+  font-family: 'Inter', sans-serif;
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 16px;
+}
+
+.gfx {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/*-------------------------------------------------------*/
+
+/* Two Col Layout
+/*-------------------------------------------------------*/
+h2 {
+  font-weight: 700;
+  line-height: 0.82;
+  text-align: left;
+  color: #363636;
+  position: relative;
+  display: inline-block;
+  transition: text-decoration 0.3s ease, opacity 0.3s ease;
+
+    box-shadow: inset 0 0 0 0 #5b1616;
+    color: #5b1616;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+  
+}
+
+h2:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #5b1616;;
+  
+  text-decoration: underline;
+  opacity: 0.75;
+}
+
+h2 :hover {
+  opacity: 70%;
+  font-weight: 700;
+  line-height: 0.82;
+  text-align: left;
+  color: #363636;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #363636;
+}
+
+.two-col-layout-1 .body-copy-wrapper {
+  margin: 0;
+}
+.two-col-layout-1 .body-copy-wrapper p {
+  margin: 25px 0 0;
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.1px;
+}
+
+h4 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  color: #828282;
+}
+    
+/*-------------------------------------------------------*/
+
+/* Three Col Layout
+/*-------------------------------------------------------*/
+.three-col-layout-1 .body-copy-wrapper p {
+  margin: 25px 0 0;
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.1px;
+}
+.three-col-layout-1 .body-copy-wrapper {
+  margin-top: 32px;
+}
+/* pullquote */
+.pullquote-wrapper {
+  width: 100%;
+  display: flex;
+}
+.quote-gfx {
+  height: 23px;
+}
+.close-quote {
+  margin-top: 22px;
+}
+.quote {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.by {
+  font-size: 14px;
+  margin: 15px 0 0;
+}
+.quote,
+.by {
+  font-weight: 500;
+}
+
+/*--------------------------
+
+     Media Queries 
+
+--------------------------*/
+/*    Mobile    */
+
+@media only screen and (min-width: 320px) {
+  /* 320 */
+
+  .layout-wrapper {
+    height: 100%;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Two Col Layout 1: 320
+	/*-------------------------------------------------------*/
+  .two-col-layout-1 .gfx {
+    height: 396px;
+    max-width: 445px;
+    background-image: url("images/ProcessWorks_2.jpg");
+  }
+  h2 {
+    font-size: 55px;
+  }
+  .two-col-layout-1 h2 {
+    margin: 37px 0 0;
+  }
+  .two-col-layout-1 h3 {
+    margin: 15px 0 0;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Three Col Layout 1: 320
+	/*-------------------------------------------------------*/
+  .three-col-layout-1 .sm-gfx {
+    max-width: 425px;
+    background-image: url("images/ProcessWorks_3.jpg");
+    height: 390px;
+    margin-top: 83px;
+  }
+  /* pullquote: 320px */
+  .pullquote-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59px;
+    margin-bottom: 57px;
+  }
+  .quote {
+    width: 265px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  /* 375 */
+  /*-------------------------------------------------------*/
+
+  /* Two Col Layout 1: 320
+	/*-------------------------------------------------------*/
+  .two-col-layout-1 .gfx {
+    height: 465px;
+  }
+  h2 {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  /* 414 */
+}
+
+@media only screen and (min-width: 568px) {
+  /* 568 */
+}
+
+@media only screen and (min-width: 667px) {
+  /* 667px */
+}
+
+@media only screen and (min-width: 736px) {
+  /* 736px */
+}
+
+@media only screen and (min-width: 768px) {
+  /* 768 */
+
+  .layout-wrapper {
+    height: auto;
+    justify-content: center;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Two Col Layout 1: 768
+	/*-------------------------------------------------------*/
+  .content-wrapper {
+    width: 320px;
+    margin-left: 45px;
+  }
+  .two-col-layout-1 .gfx {
+    width: 347px;
+    height: 475px;
+  }
+  .two-col-layout-1 h2 {
+    margin: 0;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Three Col Layout 1: 768
+	/*-------------------------------------------------------*/
+  .three-col-layout-1 .sm-gfx {
+    width: 425px;
+    height: 490px;
+  }
+  .three-col-layout-1 .content-grp {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* pullquote: 1024px */
+  .pullquote-wrapper {
+    width: 287px;
+    justify-content: center;
+    grid-row-start: 1;
+  }
+  .three-col-layout-1 .body-copy-wrapper {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .three-col-layout-1 .body-copy-wrapper p {
+    column-count: 2;
+    column-gap: 78px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+  }
+}
+
+/*    Desktop    */
+
+@media only screen and (min-width: 1024px) {
+  /* 1024 */
+  .layout-wrapper {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Two Col Layout 1: 1024
+	/*-------------------------------------------------------*/
+  .content-wrapper {
+    width: 383px;
+    margin-left: 45px;
+  }
+  .two-col-layout-1 .gfx {
+    height: 610px;
+  }
+  .two-col-layout-1 h2 {
+    margin: 37px 0 0;
+  }
+  /*-------------------------------------------------------*/
+
+  /* Three Col Layout 1: 1024
+	/*-------------------------------------------------------*/
+  .three-col-layout-1 .lg-gfx {
+    background-image: url("images/ProcessWorks_1.jpg");
+    width: 100%;
+    max-width: 887.1px;
+    height: 435px;
+  }
+
+
+  
+  .three-col-layout-1 .content-grp {
+    justify-content: center;
+    grid-template-rows: 320px 155px 370px auto;
+    grid-template-columns: 286px 139px minmax(auto, 780px);
+    justify-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .three-col-layout-1 .body-copy-wrapper {
+    padding: 0 50px 0 50px;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .three-col-layout-1 .body-copy-wrapper p {
+    width: 100%;
+    column-count: auto;
+  }
+  /* pullquote: 1024px */
+  .pullquote-wrapper {
+    justify-content: end;
+  }
+  .three-col-layout-1 .sm-gfx {
+    margin-top: 30px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    z-index: 1;
+  }
+  .three-col-layout-1 .lg-gfx {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  /* 1140 */
+
+  .three-col-layout-1 .body-copy-wrapper p {
+    column-count: 2;
+    column-gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* 1440 */
+}
+
+@media only screen and (min-width: 1662px) {
+  /* 1662px */
+}
