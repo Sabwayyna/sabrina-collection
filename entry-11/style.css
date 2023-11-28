@@ -121,7 +121,15 @@ h5 {
     height: 396px;
     max-width: 445px;
     background-image: url("images/ProcessWorks_2.jpg");
+    background-size: cover; 
+    background-position: center; 
+    transition: transform 0.3s ease-in-out; 
   }
+  
+  .two-col-layout-1 .gfx:hover {
+    transform: scale(1.1);
+  }
+  
   h2 {
     font-size: 55px;
   }
@@ -140,7 +148,13 @@ h5 {
     background-image: url("images/ProcessWorks_3.jpg");
     height: 390px;
     margin-top: 83px;
+    transition: transform 0.3s ease-in-out;
   }
+  
+  .three-col-layout-1 .sm-gfx:hover {
+    transform: scale(1.1);
+  }
+  
  
 }
 
@@ -239,7 +253,13 @@ h5 {
     width: 100%;
     max-width: 887.1px;
     height: 435px;
+    transition: transform 0.3s ease-in-out;
   }
+  
+  .three-col-layout-1 .lg-gfx:hover {
+    transform: scale(1.1);
+  }
+  
 
 
   
