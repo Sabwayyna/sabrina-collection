@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+
+
+  <title>Two Images Page</title>
+  <style>
+
+
+body {
+  cursor: url('favicon/cursor.png'), auto;
+}
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    #container {
+      text-align: center;
+    }
+
+    .image {
+      width: 90vw;
+      height: auto;
+      
+    }
+    #button-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    #navigate-button {
+        padding: 10px 20px;
+      background-color: black; 
+      font-family: 'Inter', sans-serif;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: none; 
+      transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+      transform-origin: center;
+      display: inline-block; 
+    }
+    #navigate-button:hover {
+        background-color: #3a1212; 
+      color: #fff;
+      transform: scale(1.05); 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image container -->
+  <div id="container">
+    <img class="image" src="images/screencaps_1.png" alt="Image 1">
+    <img class="image" src="images/screencaps_2.png" alt="Image 2">
+  </div>
+
+  <!-- Button to navigate back -->
+  <div id="button-container">
+    <button id="navigate-button" onclick="navigateToAnotherPage()">Go Back</button>
+  </div>
+
+  <script>
+    function navigateToAnotherPage() {
+     
+      window.location.href = 'second.html';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,6 +1,10 @@
 .section {
   height: 100vh;
-  /*border: red 1px solid;*/
+  
+}
+
+body {
+  cursor: url('favicon/cursor.png'), auto;
 }
 
 .rfa-wrapper {
@@ -19,10 +23,7 @@
   background-repeat: no-repeat;
   width: 100%;
 }
-/*-------------------------------------------------------*/
-
-/* Two Col Layout
-/*-------------------------------------------------------*/
+/*----Start-----*/
 h2 {
   font-weight: 700;
   line-height: 0.82;
@@ -81,11 +82,16 @@ h4 {
   text-align: left;
   color: #828282;
 }
-    
-/*-------------------------------------------------------*/
 
-/* Three Col Layout
-/*-------------------------------------------------------*/
+h5 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #b29595;
+}
+    
+/*Image format*/
+
 .three-col-layout-1 .body-copy-wrapper p {
   margin: 25px 0 0;
   font-size: 14px;
@@ -95,36 +101,10 @@ h4 {
 .three-col-layout-1 .body-copy-wrapper {
   margin-top: 32px;
 }
-/* pullquote */
-.pullquote-wrapper {
-  width: 100%;
-  display: flex;
-}
-.quote-gfx {
-  height: 23px;
-}
-.close-quote {
-  margin-top: 22px;
-}
-.quote {
-  font-size: 19px;
-  text-align: center;
-  margin-bottom: 0;
-}
-.by {
-  font-size: 14px;
-  margin: 15px 0 0;
-}
-.quote,
-.by {
-  font-weight: 500;
-}
 
-/*--------------------------
 
-     Media Queries 
+/*----Responsive!--------*/
 
---------------------------*/
 /*    Mobile    */
 
 @media only screen and (min-width: 320px) {
@@ -135,7 +115,7 @@ h4 {
   }
   /*-------------------------------------------------------*/
 
-  /* Two Col Layout 1: 320
+  /* For images
 	/*-------------------------------------------------------*/
   .two-col-layout-1 .gfx {
     height: 396px;
@@ -153,7 +133,7 @@ h4 {
   }
   /*-------------------------------------------------------*/
 
-  /* Three Col Layout 1: 320
+  /* For images 320px
 	/*-------------------------------------------------------*/
   .three-col-layout-1 .sm-gfx {
     max-width: 425px;
@@ -161,25 +141,12 @@ h4 {
     height: 390px;
     margin-top: 83px;
   }
-  /* pullquote: 320px */
-  .pullquote-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 59px;
-    margin-bottom: 57px;
-  }
-  .quote {
-    width: 265px;
-  }
+ 
 }
 
 @media only screen and (min-width: 375px) {
-  /* 375 */
-  /*-------------------------------------------------------*/
-
-  /* Two Col Layout 1: 320
-	/*-------------------------------------------------------*/
+  /* for 375px */
+  /*--------Images-----------*/
   .two-col-layout-1 .gfx {
     height: 465px;
   }
@@ -189,32 +156,29 @@ h4 {
 }
 
 @media only screen and (min-width: 414px) {
-  /* 414 */
+ 
 }
 
 @media only screen and (min-width: 568px) {
-  /* 568 */
+  
 }
 
 @media only screen and (min-width: 667px) {
-  /* 667px */
+ 
 }
 
 @media only screen and (min-width: 736px) {
-  /* 736px */
+ 
 }
 
 @media only screen and (min-width: 768px) {
-  /* 768 */
+  
 
   .layout-wrapper {
     height: auto;
     justify-content: center;
   }
-  /*-------------------------------------------------------*/
-
-  /* Two Col Layout 1: 768
-	/*-------------------------------------------------------*/
+  /*-----Images 768px----*/
   .content-wrapper {
     width: 320px;
     margin-left: 45px;
@@ -226,10 +190,6 @@ h4 {
   .two-col-layout-1 h2 {
     margin: 0;
   }
-  /*-------------------------------------------------------*/
-
-  /* Three Col Layout 1: 768
-	/*-------------------------------------------------------*/
   .three-col-layout-1 .sm-gfx {
     width: 425px;
     height: 490px;
@@ -239,12 +199,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  /* pullquote: 1024px */
-  .pullquote-wrapper {
-    width: 287px;
-    justify-content: center;
-    grid-row-start: 1;
-  }
+
   .three-col-layout-1 .body-copy-wrapper {
     padding: 0;
     grid-column-start: 1;
@@ -261,16 +216,13 @@ h4 {
 /*    Desktop    */
 
 @media only screen and (min-width: 1024px) {
-  /* 1024 */
+  /* 1024px! */
   .layout-wrapper {
     height: 100%;
     justify-content: center;
     align-items: center;
   }
-  /*-------------------------------------------------------*/
 
-  /* Two Col Layout 1: 1024
-	/*-------------------------------------------------------*/
   .content-wrapper {
     width: 383px;
     margin-left: 45px;
@@ -281,10 +233,7 @@ h4 {
   .two-col-layout-1 h2 {
     margin: 37px 0 0;
   }
-  /*-------------------------------------------------------*/
 
-  /* Three Col Layout 1: 1024
-	/*-------------------------------------------------------*/
   .three-col-layout-1 .lg-gfx {
     background-image: url("images/ProcessWorks_1.jpg");
     width: 100%;
@@ -313,10 +262,7 @@ h4 {
     width: 100%;
     column-count: auto;
   }
-  /* pullquote: 1024px */
-  .pullquote-wrapper {
-    justify-content: end;
-  }
+
   .three-col-layout-1 .sm-gfx {
     margin-top: 30px;
     grid-row-start: 2;
@@ -333,7 +279,7 @@ h4 {
 }
 
 @media only screen and (min-width: 1140px) {
-  /* 1140 */
+
 
   .three-col-layout-1 .body-copy-wrapper p {
     column-count: 2;
@@ -342,9 +288,9 @@ h4 {
 }
 
 @media only screen and (min-width: 1440px) {
-  /* 1440 */
+
 }
 
 @media only screen and (min-width: 1662px) {
-  /* 1662px */
+
 }
