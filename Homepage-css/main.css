@@ -15,9 +15,9 @@
 	outline: none !important;
   }
   
-h1, h2, h3, h4, h5 ,h6, body, title, header {font-family: 'Raleway', sans-serif}
+h1, h2, h3, h4, h5 ,h6, body, title, header {  font-family: 'Inter', sans-serif;}
 
-body{ background-color:#FFF; font-family: 'Raleway', sans-serif; color:#848484; font-weight:300; font-size:14px; line-height:27px; overflow-x: none}
+body{ background-color:#FFF;   font-family: 'Inter', sans-serif;; color:#848484; font-weight:300; font-size:14px; line-height:27px; overflow-x: none}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {display: block}
 
