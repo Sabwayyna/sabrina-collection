@@ -10,7 +10,9 @@
   <header>
     
     <div id="title">
-      <h1><a href="https://www.merriam-webster.com/dictionary/change" id="titlelink">Change</a></h1>
+
+      <h1><a href="https://www.merriam-webster.com/dictionary/change">Change</a></h1>
+      
       <h2>𝘯𝘰𝘶𝘯</h2>
       <p>The act or instance of making or becoming different.</p>
     </div>
@@ -85,7 +87,7 @@
             <body>
 
             <div id="randnum">
-              <h2>how about we draw number ʳᵃⁿᵈᵒᵐˡʸ ᵍᵉⁿᵉʳᵃᵗᵉᵈ</h2>
+              <h2>how about we draw number</h2>
               <div id="num">
                 5 <sup style="font-size:3rem; vertical-align:top;">*</sup>
               </div>
@@ -93,11 +95,60 @@
                <strong>*</strong> <br><em></em>
               </div>
             </div>
-
+      
+          <body>
+          
+            <a href="https://sabwayyna.github.io/sabrina-collection/" class="top-right-btn">Homepage</a>
+          
+          </body>
             <!--style -->
 <style>
 
+h1 a {
+      text-decoration: underline;
+      color: #3f3333;
+      position: relative;
+      transition: color 0.3s ease, box-shadow 0.3s ease;
+    }
 
+    h1 a:hover {
+      color: #7b6565;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+.top-right-btn {
+    font-weight:500;
+       font-family: 'Inter', sans-serif;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .top-right-btn:hover {
+      color: #000000;
+      opacity: 60%;
+    }
+
+    .top-right-btn::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      right: 0;
+      background-color: #000000;
+      transition: width 0.3s ease;
+      opacity: 60%;
+    }
+
+    .top-right-btn:hover::before {
+      width: 100%;
+    }
+  
   body {
   background: #fafafa;
   color: rgba(0, 0, 0, 0.84);
@@ -108,12 +159,12 @@
 }
 
 h2,h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight:600;
 }
 
@@ -151,26 +202,53 @@ background-image: url("images/Background.png");
 </style>
 <!--Java!-->
           
-            <script>
-              document.getElementById('nojs').style.display='none';
-              document.getElementById('num').innerHTML = Math.round(Math.random()*100);
-              
-              var colors = ['#82b964', '#d24d33', '#2e77bb', '#4da574', '#b58400', '#df620e', '#ce8200', '#6b4389', '#d43f3f', '#668000', '#4ea2b7', '#91753b', '#2980b9'];
-              var title = document.getElementById('titlelink');
-              title.setAttribute('onmouseover', 'setRandColor();');
-              title.setAttribute('onmouseout', 'setDefaultColor();');
-              function setRandColor() {title.style.color = colors[Math.floor(Math.random()*colors.length)];}
-              function setDefaultColor(){title.style.color = '#2c3e50';}
+          
+  <script>
+    document.getElementById('nojs').style.display='none';
+    document.getElementById('num').innerHTML = Math.round(Math.random()*100);
+    
+    var colors = ['#82b964', '#d24d33', '#2e77bb', '#4da574', '#b58400', '#df620e', '#ce8200', '#6b4389', '#d43f3f', '#668000', '#4ea2b7', '#91753b', '#2980b9'];
+    var numElement = document.getElementById('num');
 
-              
-            </script>
+    numElement.addEventListener('mouseover', function() {
+      setRandColor();
+    });
+
+    numElement.addEventListener('mouseout', function() {
+      setDefaultColor();
+    });
+
+    function setRandColor() {
+      numElement.style.color = colors[Math.floor(Math.random()*colors.length)];
+    }
+
+    function setDefaultColor() {
+      numElement.style.color = '#2c3e50';
+    }
+  </script>
 <style>
-  
-#randnum {text-align:center; background: transparent; padding:10px 10px 25px;}
-#randnum h2 {margin-bottom:5px;}
-#num {font-family: 'Raleway', sans-serif; font-size:11rem;}
-#nojs {margin:20px auto 0; width:70%; background:#f6f600; border-radius:10px;}
+  #randnum {
+    text-align: center;
+    background: transparent;
+    padding: 10px 10px 25px;
+  }
 
+  #randnum h2 {
+    margin-bottom: 5px;
+  }
+
+  #num {
+    font-family: 'Inter', sans-serif;
+    font-size: 11rem;
+    transition: color 0.3s ease; /* Adding transition for smooth color change */
+  }
+
+  #nojs {
+    margin: 20px auto 0;
+    width: 70%;
+    background: #f6f600;
+    border-radius: 10px;
+  }
 </style>
 
 <!--end of style -->
