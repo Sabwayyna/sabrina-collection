@@ -23,7 +23,7 @@ body {
       align-items: center;
       flex-direction: column;
       height: 100vh;
-      background-color: #ffffff;
+      background-color: #000000;
     }
     
     #video-container {
@@ -69,11 +69,11 @@ body {
 
     .button {
       padding: 10px 20px;
-      background-color: black; 
+      
       font-family: 'Inter', sans-serif;
       color: white;
-      border: none;
       border-radius: 5px;
+      border-color: white;
       cursor: pointer;
       font-size: 16px;
       text-decoration: none; 
@@ -83,9 +83,9 @@ body {
     }
 
     .button:hover {
-      background-color: #3a1212; 
-      color: #fff;
-      transform: scale(1.1); 
+      background-color: #ffffff; 
+      color: #000000;
+      transform: scale(1.03); 
     }
   
     
@@ -98,7 +98,7 @@ body {
     </video>
     <button class="play-button" onclick="playVideo()">▶</button>
   </div>
-  <a href="second.html" class="button">Go Back</a>
+  <a href="Index.html" class="button">Go Back</a>
 
   <script>
     var video = document.getElementById('video');

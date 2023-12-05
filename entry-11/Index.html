@@ -1,44 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyclic Dread loading...</title>
+  <title>Cyclic Dread...</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+<link rel="icon" type="image/x-icon" href="favicon/favicon.png">
 
-  <style>
-
-body {
-  cursor: url('favicon/cursor.png'), auto;
-}
-
-    body {
-      margin: 0;
-      overflow: hidden;
-    }
-
-    video {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-  </style>
 </head>
 <body>
 
-  <video id="myVideo" autoplay muted playsinline>
-    <source src="videos/intro.mp4" type="video/mp4">
-  </video>
-  
-  
+  <div id="black-screen"></div>
+<!-- text -->
+<p>
+  Awakening in a dim unfamiliar room, startled and disoriented... you navigate the obscure space with <a href="second.html">cyclic dread...</a> with only a faint glimmer of distant lights illuminating a long, foreboding hallway. But what is that you 
+  <a href="video.html">see...</a>
+   
+  </p>
 
+  <style>
+
+#black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fade-in 10s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+    
+   a {
+    color: rgb(215, 179, 179);
+    font-weight: 100;
+    text-decoration: underline;
+    font-style: italic;
+    color: inherit;
+    position: relative;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  color: darkred; /* Change the text color to dark red on hover */
+  text-shadow: 0 0 10px rgba(139, 0, 0, 1), 0 0 20px rgba(139, 0, 0, 0.8), 0 0 30px rgba(139, 0, 0, 0.6); /* Multiple text shadows for a glowing effect in dark red */
+  transition: color 0.8s ease; /* Smooth transition for the color change */
+}
+
+
+  /*Animation style*/
+
+body {
+  cursor: url('images/cursor.png'), auto;
+  font-weight: 200;
+  background: black;
+  color: white;
+  font: 3vw/1.2 "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 55vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  perspective: 200px;
+  -webkit-animation: perspective 15s cubic-bezier(0.35, 0.06, 0.92, 0.03) infinite;
+          animation: perspective 15s cubic-bezier(0.35, 0.06, 0.92, 0.03) infinite;
+}
+@-webkit-keyframes perspective {
+  0% {
+    perspective: 100px;
+    transform: scale(0.5);
+  }
+  100% {
+    perspective: 10000px;
+    transform: scale(1);
+  }
+}
+@keyframes perspective {
+  0% {
+    perspective: 100px;
+    transform: scale(0.5);
+  }
+  100% {
+    perspective: 18800px;
+    transform: scale(1);
+  }
+}
+
+p {
+  transform-style: preserve-3d;
+}
+
+span {
+  display: inline-block;
+}
+span:nth-child(1) {
+  transform: translateZ(-105.0589975888px);
+}
+span:nth-child(2) {
+  transform: translateZ(-203.745502158px);
+}
+span:nth-child(3) {
+  transform: translateZ(-52.3976964919px);
+}
+span:nth-child(4) {
+  transform: translateZ(-294.3490598732px);
+}
+span:nth-child(5) {
+  transform: translateZ(-420.871503564px);
+}
+span:nth-child(6) {
+  transform: translateZ(-115.1815407268px);
+}
+span:nth-child(7) {
+  transform: translateZ(-947.2472504323px);
+}
+span:nth-child(8) {
+  transform: translateZ(-202.2458728468px);
+}
+span:nth-child(9) {
+  transform: translateZ(-150.7362901295px);
+}
+span:nth-child(10) {
+  transform: translateZ(-509.8218042242px);
+}
+span:nth-child(11) {
+  transform: translateZ(-848.3250292347px);
+}
+span:nth-child(12) {
+  transform: translateZ(-132.6944385836px);
+}
+span:nth-child(13) {
+  transform: translateZ(-479.1283012314px);
+}
+span:nth-child(14) {
+  transform: translateZ(-82.9623142735px);
+}
+span:nth-child(15) {
+  transform: translateZ(-8.1838921516px);
+}
+span:nth-child(16) {
+  transform: translateZ(-253.5184121472px);
+}
+span:nth-child(17) {
+  transform: translateZ(-734.753862158px);
+}
+span:nth-child(18) {
+  transform: translateZ(-576.5001023596px);
+}
+span:nth-child(19) {
+  transform: translateZ(-216.218376027px);
+}
+span:nth-child(20) {
+  transform: translateZ(-223.6275131439px);
+}
+span:nth-child(21) {
+  transform: translateZ(-844.1775715483px);
+}
+span:nth-child(22) {
+  transform: translateZ(-417.9826847142px);
+}
+span:nth-child(23) {
+  transform: translateZ(-212.5337564504px);
+}
+span:nth-child(24) {
+  transform: translateZ(-539.6403405181px);
+}
+span:nth-child(25) {
+  transform: translateZ(-938.5082871821px);
+}
+span:nth-child(26) {
+  transform: translateZ(-19.1915278482px);
+}
+span:nth-child(27) {
+  transform: translateZ(-216.2270715262px);
+}
+span:nth-child(28) {
+  transform: translateZ(-875.6709030094px);
+}
+span:nth-child(29) {
+  transform: translateZ(-422.4201579564px);
+}
+span:nth-child(30) {
+  transform: translateZ(-782.2135749535px);
+}
+span:nth-child(31) {
+  transform: translateZ(-699.4136707974px);
+}
+span:nth-child(32) {
+  transform: translateZ(-882.8522886666px);
+}
+span:nth-child(33) {
+  transform: translateZ(-886.7624178522px);
+}
+span:nth-child(34) {
+  transform: translateZ(-646.9916481985px);
+}
+span:nth-child(35) {
+  transform: translateZ(-292.0902474074px);
+}
+span:nth-child(36) {
+  transform: translateZ(-824.9815185514px);
+}
+span:nth-child(37) {
+  transform: translateZ(-995.6740413923px);
+}
+span:nth-child(38) {
+  transform: translateZ(-968.8890947951px);
+}
+span:nth-child(39) {
+  transform: translateZ(-82.3034670763px);
+}
+span:nth-child(40) {
+  transform: translateZ(-207.2389772465px);
+}
+span:nth-child(41) {
+  transform: translateZ(-124.5104779521px);
+}
+span:nth-child(42) {
+  transform: translateZ(-414.8586357177px);
+}
+span:nth-child(43) {
+  transform: translateZ(-480.8944227094px);
+}
+span:nth-child(44) {
+  transform: translateZ(-503.5443127448px);
+}
+span:nth-child(45) {
+  transform: translateZ(-443.9148928453px);
+}
+span:nth-child(46) {
+  transform: translateZ(-246.7761445229px);
+}
+span:nth-child(47) {
+  transform: translateZ(-953.906243906px);
+}
+span:nth-child(48) {
+  transform: translateZ(-847.4955349334px);
+}
+span:nth-child(49) {
+  transform: translateZ(-546.8192155626px);
+}
+span:nth-child(50) {
+  transform: translateZ(-925.6014199302px);
+}
+span:nth-child(51) {
+  transform: translateZ(-149.9549067571px);
+}
+span:nth-child(52) {
+  transform: translateZ(-370.2497335356px);
+}
+span:nth-child(53) {
+  transform: translateZ(-973.3714927995px);
+}
+span:nth-child(54) {
+  transform: translateZ(-42.1313240878px);
+}
+span:nth-child(55) {
+  transform: translateZ(-208.1801436444px);
+}
+span:nth-child(56) {
+  transform: translateZ(-887.9023832575px);
+}
+span:nth-child(57) {
+  transform: translateZ(-743.399203577px);
+}
+span:nth-child(58) {
+  transform: translateZ(-368.5558193392px);
+}
+span:nth-child(59) {
+  transform: translateZ(-912.674108806px);
+}
+span:nth-child(60) {
+  transform: translateZ(-96.1951313029px);
+}
+span:nth-child(61) {
+  transform: translateZ(-757.3989979784px);
+}
+span:nth-child(62) {
+  transform: translateZ(-40.7882989887px);
+}
+span:nth-child(63) {
+  transform: translateZ(-550.343744093px);
+}
+span:nth-child(64) {
+  transform: translateZ(-328.1554761072px);
+}
+span:nth-child(65) {
+  transform: translateZ(-313.465647691px);
+}
+span:nth-child(66) {
+  transform: translateZ(-196.29998819px);
+}
+span:nth-child(67) {
+  transform: translateZ(-795.9978448499px);
+}
+span:nth-child(68) {
+  transform: translateZ(-467.3973837323px);
+}
+span:nth-child(69) {
+  transform: translateZ(-793.5282847205px);
+}
+span:nth-child(70) {
+  transform: translateZ(-707.8292278808px);
+}
+  </style>
+  
 <script>
-  const video = document.getElementById("myVideo");
+  var p = document.querySelector('p');
+p.innerHTML = p.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span>$2</span>');
 
-  video.addEventListener("ended", function() {
-    window.location.href = "second.html"; 
-  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Wait for the DOM to be fully loaded before fading out the black screen
+  var blackScreen = document.getElementById("black-screen");
+  if (blackScreen) {
+    setTimeout(function () {
+      blackScreen.style.display = "none";
+    }, 10000); // Adjust the timeout to match the duration of the CSS animation
+  }
+});
+
 </script>
 
 </body>

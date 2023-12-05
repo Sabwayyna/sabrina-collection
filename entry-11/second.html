@@ -2,114 +2,208 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Cyclic Dread</title>
-<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/jquery.fullPage.css'>
-<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/upstreamStyle.css'><link rel="stylesheet" href="./style.css">
+  <title>Cyclic Dread Process</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
 
+<script src="script.js"></script>
+
 </head>
 
 
-<a href="https://sabwayyna.github.io/sabrina-collection/" target="_blank" class="external-link">Homepage</a>
+<a href="Index.html" class="top-left-button">Main Page</a>
 <style>
-  .external-link {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      padding: 10px;
-      color: rgb(35, 10, 10)!important;
-      text-decoration: none;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: opacity 0.3s ease; 
-      z-index: 1;
+
+#fade-in-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 1;
+      z-index: 9999;
+      animation: fade-in 3s ease-out forwards; 
     }
 
-    .external-link:hover {
-      opacity: 0.55; 
-      font-size: 1.05em; 
-      
-    }
-   
-    strong {
-      font-weight: bold;
-    }
+    @keyframes fade-in {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
 
+      }
+    }
+.top-left-button {
+  font-size: small;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #fff; /* Add white border */
+  border-radius: 0; /* Straight corners */
+  cursor: pointer;
+  transition: background-color 0.6s ease, color 0.6s ease; /* Add color transition */
+  z-index: 9999;
+}
+
+.top-left-button:hover {
+  
+  background-color: transparent;
+  color: #ffffff;
+}
 </style>
+
 <body>
+  <div id="fade-in-overlay"></div>
 
+<!-- partial:index.partial.html -->
+<div class="profile">
+  <video autoplay loop muted controls>
+    <source src="images/process-animation.mp4" type="video/mp4">
     
-
-
-<!-- Start of Main Page -->
-<div id="fullpage" class="rfa-wrapper">
-  <div class="section">
-    <div class="layout-wrapper two-col-layout-1">
-      
-      <div class="gfx"></div>
-      <div class="content-wrapper">
-        <a href="video.html">
-          <h2>Cyclic Dread</h2>
-        </a>
-        <h5>↑Full video</h5>
-        <h3>My First Attempt in Animation</h3>
-        <h4>Duration: 1:11, Made in 2023</h4>
-        <div class="body-copy-wrapper">
-          <p>In this first-person animation, the viewer is put into a disconcerting scenario, awakening in a dimly lit, 
-              unfamiliar room. Startled and disoriented, the viewer navigates the obscure space, with only a faint glimmer of distant lights illuminating a long, foreboding hallway.</p>
-          <p>As the viewer cautiously advances, the lights lining the corridor flicker ominously, casting eerie shadows. With each passing moment, the lights sequentially extinguish, plunging the hallway into an increasing abyss of darkness. An unsettling tension builds as the viewer becomes acutely aware of their vulnerability in the encroaching blackness.<strong>↓Scroll for more content↓</strong>
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="layout-wrapper three-col-layout-1">
-      <body>*Process Images</body>
-      <div class="content-grp">
-       
-        
-        <div class="gfx sm-gfx"></div>
-        <a href="screencap.html" target="_blank">
-          <img src="images/screencap.jpg" alt="Clickable Image">
-        </a>
-
-        
-        <style>
-          
-          img {
-      width: 250px;
-      height: auto;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: transform 0.3s, border-color 0.3s;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-      border: 2px solid #232323; 
-    }
-        </style>
-       
-        <div class="gfx lg-gfx"></div>
-      
-        <div class="body-copy-wrapper">
-          <p>All frames were drawn by hand and edited together after shooting the images as stop motion. I used a simple color palette of dark reds and black-white, allowing viewers to be more focused on when color do appear, emphasizing the danger of the monster.
-            As this was my first attempt in animation, I learned as I drew each frames. I aimed to use this learning process to my advantage, having simpler animation begin in the beginning, such as the water drop, then the blinking eye, then finally the monster.
-            Overall, I am proud of this animation and I aim to explore more on this subject through my ever-changing and evolving learning process.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </video>
 </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/jquery.fullPage.js'></script><script  src="./script.js"></script>
+<article>
+  <header>
+    <h1>
+      <div class="nth-line-1">
+       Cyclic
+      </div>
+      <div class="nth-line-2">
+       Dread
+      </div>
+    </h1>
+    <p class="lead">
+      Process page on my animation process
+    </p>
+  </header>
+  <hr />
+  <section>
+    <p>
+      In this first-person animation, the viewer is put into a disconcerting scenario, awakening in a dimly lit, 
+      unfamiliar room. Startled and disoriented, the viewer navigates the obscure space, with only a faint glimmer of distant lights illuminating a long, foreboding hallway.
+      As the viewer cautiously advances, the lights lining the corridor flicker ominously, casting eerie shadows. With each passing moment, the lights sequentially extinguish, plunging the hallway into an increasing abyss of darkness.
+     An unsettling tension builds as the viewer becomes acutely aware of their vulnerability in the encroaching blackness.
+    </p>
 
+    <p>
+
+      I wanted to create a first-person short horror animation, and my goal was to immerse the viewer in an intense and disconcerting experience from the moment they open their eyes in the dimly lit, unfamiliar room. 
+      
+     To begin, I used a single drop of "water" that would allow the viewers to question why that it is there as the introduction of this animation. (The water drop is actually the drop of blood after the monster eats the "viewer")
+    I wanted to express the "cyclic" part of the animation through this element. Also, I wanted the dim and muted colors to convey an otherworldly quality, leaving the viewer with a feeling of uncertainty about their surroundings.
+    </p>
+    
+    <p class="clickable-link">
+      
+
+      All <a href="screencap.html">frames</a> were drawn by hand and edited together after shooting the images as stop motion. I used a simple color palette of dark reds and black-white, allowing viewers to be more focused on when color do appear, emphasizing the danger of the monster.
+      As this was my first attempt in animation, I learned as I drew each frames. I aimed to use this learning process to my advantage, having simpler animation begin in the beginning, such as the water drop, then the blinking eye, then finally the monster.
+      
+
+    </p>
+    <p>
+      This animation project marked a significant departure for me as an artist, embodying the theme of change in my creative journey. 
+      Initially, I was intimidated by animation, seeing it as difficult and repetitive process. 
+      The unfamiliarity of the medium kept me at a distance from exploring this facet of art.
+
+    </p>
+
+   
+
+    <p>
+
+It wasn't until my last semester of school that I found myself in animation. 
+I was assigned to create a traditionally drawn animation, I faced the daunting thought of delving into a medium I had long avoided. 
+The project centered around the very essence of change – both in terms of artistic expression and my own comfort zone.
+    </p>
+   
+    <p>
+      Towards the finishing of the animation, I was proud and excited to see this final product. It is definitely not the best animation, but it is a giant shift from my inital pessimistic perspective.
+      The worries that initially led me away to the potential for growth and exploration within this medium. 
+      The animation turned out to be a reflection of the importance to adapt, learn, and embrace change in my artistic process.
+    </p>
+
+    <div class="image-container">
+      <img alt="Process images" src="images/IMG_3396.JPG" class="hover-zoom" />
+      <img alt="2" src="images/ProcessWorks_2 copy.jpg" class="hover-zoom" />
+
+      <a href="https://sabwayyna.github.io/sabrina-collection/entries.html" class="custom-button">Back to All Entries</a>
+    <style>
+
+
+.hover-zoom {
+  width: 200px; /* Set your desired initial width */
+  height: auto;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.custom-button {
+  font-size: small;
+  font-weight: 200;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px; 
+  background-color: #fff; /* Filled with white on hover */
+  color: #000000;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.6s ease, color 0.6s ease; 
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  text-decoration: none;
+  
+  color: #ffffff; /* Text color becomes black on hover */
+}
+
+
+.clickable-link a {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s ease; 
+}
+
+.clickable-link a:hover {
+  color: #000; /* Change text color on hover */
+}
+
+   img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.33em;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  img {
+    max-width: 30%;
+  }
+}
+
+
+    </style>
+  </section>
+</article>
+<!-- partial -->
+  
 </body>
 </html>
