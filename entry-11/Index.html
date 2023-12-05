@@ -60,9 +60,9 @@
 
   a:hover {
   text-decoration: underline;
-  color: darkred; /* Change the text color to dark red on hover */
-  text-shadow: 0 0 10px rgba(139, 0, 0, 1), 0 0 20px rgba(139, 0, 0, 0.8), 0 0 30px rgba(139, 0, 0, 0.6); /* Multiple text shadows for a glowing effect in dark red */
-  transition: color 0.8s ease; /* Smooth transition for the color change */
+  color: darkred; 
+  text-shadow: 0 0 10px rgba(139, 0, 0, 1), 0 0 20px rgba(139, 0, 0, 0.8), 0 0 30px rgba(139, 0, 0, 0.6);
+  transition: color 0.8s ease;
 }
 
 
@@ -330,12 +330,12 @@ p.innerHTML = p.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span>$2</s
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Wait for the DOM to be fully loaded before fading out the black screen
+ 
   var blackScreen = document.getElementById("black-screen");
   if (blackScreen) {
     setTimeout(function () {
       blackScreen.style.display = "none";
-    }, 10000); // Adjust the timeout to match the duration of the CSS animation
+    }, 10000); 
   }
 });
 

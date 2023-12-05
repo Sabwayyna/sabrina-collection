@@ -92,13 +92,13 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
-  transition: color 0.8s ease; /* Smooth transition for the color change */
+  transition: color 0.8s ease;
 }
 
 h1:hover {
-  color: darkred; /* Change the text color to dark red on hover */
-  text-shadow: 0 0 10px darkred, 0 0 20px darkred, 0 0 30px darkred; /* Multiple text shadows for a bleeding effect */
-  animation: glisten 1.5s infinite; /* Add glistening animation on hover */
+  color: darkred; 
+  text-shadow: 0 0 10px darkred, 0 0 20px darkred, 0 0 30px darkred; 
+  animation: glisten 1.5s infinite; 
 }
 
 @keyframes glisten {
