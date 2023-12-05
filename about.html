@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<title>Why "Change"?</title>
 <div class="wrapper">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,12 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;900&display=swap" rel="stylesheet">
 
     <div class="left-container">
+    
+      <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
         <h1 class="heading">Change</h1>
             <style>
                 .heading {
-                font-style: italic;
-                }
+            font-style: italic;
+            opacity: 0;
+            animation: fadeIn 5.5s ease-in-out forwards;
+        }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
             </style>
       <span class="separator">-</span>
       <p class="intro">My life is defined by a central theme: "Change."
@@ -62,7 +75,6 @@
         </p>
       </div>
       
-      <a href="index.html" class="back-to-homepage">Back to Title Page,</a>
       <a href="entries.html" class="back-to-homepage">Entries Page</a>
 
     </div>
@@ -71,6 +83,11 @@
  <!--style -->
 
  <style>
+ .back-to-homepage {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline; 
+  font-size: 0.95em;
+        }
 
 .heading {
   transition: opacity 0.3s; 
@@ -158,6 +175,15 @@ a.back-to-homepage:active {
   display: block;
   font-size: 2.3em;
   margin-bottom: 25px;
+}
+
+.a {
+  font-size: 1.15em;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #1e1e1e;
+
 }
 
 .intro {
